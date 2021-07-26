@@ -1,0 +1,23 @@
+name: Byzantský Generál
+title: 21 Lekcií
+description: >Čo som sa naučil pri páde do Bitcoinovej zajačej nory.
+
+# Collections
+collections_dir: collections
+collections:
+  lessons:
+    output: true
+    permalink: /:path/ # path = filename relative
+  links:
+    title: Links
+    output: true
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body] 
