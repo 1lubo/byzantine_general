@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lekcia 15</title>
+  <meta name="description" content="21 lekcií naučených pri páde do Bitcoinovej zajačej nory.. ">
+  <meta itemprop="name" content="Byzantský Generál">
+  <meta itemprop="description" content="Prieskym otázok a lekcií naučených pri páde do Bitcoinovej zajačej nory.">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body id="lekcia15" class="lesson-layout">
+  <header class="header"> <a class="header__title"> <img src="dummy/byzantine_logo.png" /> </a>
+  </header>
+  <main class="💈">
+    <section class="post">
+      <div>
+        <div class="post__header section-padding">
+          <div class="grid-small">
+            <h2>Lekcia 15</h2>
+            <h3>Sila v číslach</h3>
+            <blockquote cite="">Pozrime sa na to: štyri krát päť je dvanásť a štyri krát šesť je trinásť a štyri krát sedem je štrnásť – ale no tak! Týmto tempom sa nikdy nedostanem po dvadsať!
+            </blockquote>
+          </div>
+        </div>
+        <div class="post__content section-padding">
+          <div class="grid">
+            <div id="markdown">
+
+                <ul class="lesson__navigation">
+                  <li><a href="./kapitola3.html" title="Predchádzajúca"></a></li>
+                  <li><a href="./obsah.html" title="Obsah">Obsah</a></li>
+                  <li><a href="./lekcia16.html" title="Ďalšia"></a></li>
+                </ul>
+
+
+              <p>Čísla sú neodmysliteľnou súčasťou nášho každodenného života. S veľkými číslami si však väčšina z nás neporadí. Najväčšie čísla, s ktorými by sme sa mohli bežne dostať do kontaktu,
+                sa pohybujú v rozsahu miliónov, miliárd alebo triliónov. Možno čítame o miliónoch ľudí žijúcich v chudobe, miliardách dolárov vynaložených na pomoc bankám a triliónoch dolárov národného dlhu.
+                Aj keď je do istej miery ťažké pochopiť tieto nadpisy, veľkosť týchto čísel nás až tak neprekvapuje.</p>
+              <p>Hoci by sa mohlo zdať, že dokážeme spracovať miliardy alebo trilióny, naša intuícia už pri číslach tejto magnitúdy zlyháva. Máte tušenie ako dlho by ste museli čakať, kým prejde
+                milión/miliarda/trilión sekúnd? Ak ste ako ja, ste stratení, kým si tieto čísla naozaj nespočítate.</p>
+              <p>Poďme sa podrobnejšie pozrieť na tento príklad: rozdiel medzi nimi je vždy zvýšenie o tri rády magnitúdy: 10⁶, 10⁹, 10¹².
+                Premýšľať o sekundách nie je veľmi užitočné, takže si to preložme do niečoho, čo si dokážeme v hlave spracovať:</p>
+              <ul>
+                <li>10⁶: jeden milión sekúnd to je pred 1 a pol týždňom.</li>
+                <li>10⁹: jedna miliarda sekúnd to je takmer pred 32 rokmi.</li>
+                <li>10¹²: pred jedným triliónom sekúnd bol Manhattan pokrytý <a href="https://en.wikipedia.org/wiki/Last_Glacial_Maximum">hrubou vrstvou ľadu</a>.</li>
+              </ul>
+              <figure> <img src="https://21lessons.com/assets/images/xkcd-1225.png">
+                <figcaption>Asi pred 1 triliónom sekúnd. Zdroj: xkcd #1225</figcaption>
+              </figure>
+              <p>Akonáhle vstúpime do mimoastronomického kráľovstva modernej kryptografie, naša intuícia katastroficky zlyháva. Bitcoin je vybudovaný na veľkých číslach a
+                praktickej nemožnosti ich uhádnutia. Tieto čísla sú oveľa väčšie ako čokoľvek s čím sa môžme stretnúť v každodennom živote. O mnoho rádov väčšie. Ak pochopíme,
+                aké veľké tieto čísla v skutočnosti sú, je to základ pochopenia Bitcoinu ako celku.</p>
+              <p>Zoberme si <a href="https://en.wikipedia.org/wiki/SHA-2">SHA-256</a>, jednu z <a href="https://en.bitcoin.it/wiki/Block_hashing_algorithm">hašovacích funkcií</a> používaných pri Bitcoine ako konkrétny príklad. Je prirodzené
+                predstaviť si 256 bitov ako „dvesto
+                päťdesiat šesť", čo nie je veľké číslo.
+                Číslo v SHA-256 nám hovorí o rádoch magnitúdy — niečom, čo naše mozgy nie sú schopné ľahko spracovať.</p>
+              <p>Zatiaľ čo dĺžka bitu je vhodnou metrikou, skutočný význam 256-bitovej bezpečnosti sa pri preklade stráca.
+                Podobne ako pri miliónoch (10⁶) a miliardách (10⁹) uvedených vyššie je číslo v SHA-256 v rádoch magnitúdy (2²⁵⁶).</p>
+              <p>Takže aký silný je vlastne SHA-256?</p>
+              <blockquote>
+                <p>“SHA-256 je veľmi silný. Nie je ako inkrementálny krok z MD5 na SHA1. Môže trvať niekoľko desaťročí, kým príde k prelomeniu tohto kódu.”
+                  <cite><a href="https://bitcointalk.org/index.php?topic=191.msg1585#msg1585">Satoshi Nakamoto</a></cite>
+                </p>
+              </blockquote>
+              <p>Poďme si veci pomenovať. 2²⁵⁶ sa rovná nasledujúcemu číslu:</p>
+              <div class="language-plaintext highlighter-rouge">
+                <div class="highlight">
+                  <pre class="highlight"><code>115 kvattuorvigintilión 792 trevigintilión 89 duovigintillión 237 unvigintilión 316 vigintilión 195 novemdecilión 423 oktodecilión 570 septendecilión 985 sexdecilión 8 kvindecilión 687 kvattuordecilión 907 tredecilión 853 duodecilión 269 undecilión 984 decilión 665 nonilión 640 oktilión 564 septilión 39 sextilión 457 kvintilión 584 kvadrilión 7 trilión 913 miliarda 129 milión 639 tisíc 936.
+</code></pre>
+                </div>
+              </div>
+              <p>To je veľa noniliónov! Pochopiť tieto čísla je takmer nemožné. Vo fyzikálnom svete neexistuje nič, s čím by sa to dalo porovnať. Je to oveľa väčšie číslo ako je počet
+                atómov v pozorovateľnom vesmíre. Ľudský mozog jednoducho nie je stvorený na to, aby to pochopil.</p>
+              <p>Jednou z najlepších vizualizácií skutočnej sily SHA-256 je nasledujúce video od Granta Sandersona. Vhodne pomenované <a href="https://www.youtube.com/watch?v=S9JGmA5_unY" class="">„Aké bezpečné je 256-bitové zabezpečenie?“</a> –
+                krásne ukazuje aký veľký je 256-bitový priestor. Dajte si tú námahu a venujte päť minút svojho času tomuto videu. Tak ako všetky ostatné videá <a href="https://twitter.com/3blue1brown">3Blue1Brown</a> je nielen fascinujúce,
+                ale aj výnimočne dobre urobené. Varovanie: Mohli by ste spadnúť do matematickej králičej nory.</p>
+              <figure> <img src="https://21lessons.com/assets/images/youtube-vid.png">
+                <figcaption>Odpoveď: Celkom bezpečné.</figcaption>
+              </figure>
+              <p><a href="https://www.schneier.com/">Bruce Schneier</a> použil fyzikálne limity výpočtovej techniky, aby toto číslo znázornil: aj keby sme dokázali vytvoriť optimálny počítač,
+                ktorý by využíval všetku dodávanú energiu na <a href="https://en.wikipedia.org/wiki/Landauer%27s_principle#Equation">dokonalé prepínanie bitov</a>, a potom postavili okolo nášho slnka
+                <a href="https://en.wikipedia.org/wiki/Dyson_sphere">Dysonovu sféru</a>, a nechali tento počítač bežať 100 miliárd miliárd rokov,
+                stále by sme mali len 25 % šancu, že nájdeme ihlu v 256-bitovej kôpke sena.
+              </p>
+              <blockquote>
+                <p>“Tieto čísla nemajú nič spoločné s technológiou zariadení; predstavujú maximá, ktoré povoľuje termodynamika. A silno naznačujú,
+                  že útoky hrubou silou proti 256-bitovým kľúčom budú nereálne, kým nebudú počítače vyrobené z niečoho iného ako je hmota a budú sa pohybovať niekde inde ako v priestore.”
+                  <cite><a
+                      href="https://books.google.com/books?id=Ok0nDwAAQBAJ&amp;pg=PT316&amp;dq=%22These+numbers+have+nothing+to+do+with+the+technology+of+the+devices;%22&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjXttWl8YLhAhUphOAKHZZOCcsQ6AEIKjAA#v=onepage&amp;q&amp;f=false">Bruce
+                      Schneier</a></cite>
+                </p>
+              </blockquote>
+              <p>Bolo by ťažké prehnať závažnosť tohto výroku. Silná kryptografia mení rovnováhu síl vo fyzickom svete, na ktorú sme zvyknutí. Nerozbitné veci v reálnom svete neexistujú.
+                Použite dostatočnú silu a dokážete otvoriť každé dvere, krabicu alebo truhlicu s pokladom.</p>
+              <p>Bitcoinová truhlica s pokladom je značne odlišná. Je zabezpečená silnou kryptografiou, ktorá nepodľahne hrubej sile. A pokiaľ budú platiť základné matematické
+                predpoklady, jediné, čo máme k dispozícii je hrubá sila. Samozrejme je tu stále možnosť globálneho útoku <a href="https://xkcd.com/538/">francúzskym kľúčom za päť dolárov</a>. Mučením však neodomkneme všetky bitcoinové adresy a
+                kryptografické steny bitcoinu odolajú každému útoku hrubou silou. Ani keby ste prišli so silou tisíca sĺnk. Doslova.</p>
+              <p>Táto skutočnosť a jej následky boli výstižne zhrnuté vo <a href="https://cryptome.org/2012/12/assange-crypto-arms.htm">výzve ku kryptografickým zbraniam</a>:
+                „<em>Žiadny objem donucovacej sily nikdy nevyrieši matematický problém.“</em></p>
+              <blockquote>
+                <p>“Nie je samozrejmé, že svet musel takto fungovať. Ale vesmír sa na šifrovaniez nejakého dôvodu usmieva.”
+                  <cite><a href="https://cryptome.org/2012/12/assange-crypto-arms.htm">Julian Assange</a></cite>
+                </p>
+              </blockquote>
+              <p>Nikto zatiaľ s určitosťou nevie, či je úsmev vesmíru pravý alebo nie. Je možné, že náš predpoklad matematických asymetrií je nesprávny a zistíme,
+                že <a href="https://en.wikipedia.org/wiki/P_versus_NP_problem#P_=_NP">P sa vlastne rovná NP</a> alebo alebo nájdeme prekvapivo rýchle riešenia
+                <a href="https://en.wikipedia.org/wiki/Discrete_logarithm#Cryptography">špecifických problémov</a>, o ktorých si v súčasnosti myslíme, že sú ťažké. V tom prípade kryptografia tak ako
+                ju poznáme prestane existovať a implikácie by pravdepodobne zmenili svet na nepoznanie.
+              </p>
+              <blockquote>
+                <p>“Vires in Numeris” = “Sila v číslach” <cite><a href="https://bitcointalk.org/index.php?topic=4994.msg140770#msg140770">epii</a></cite></p>
+              </blockquote>
+              <p><em>Vires in numeris</em> nie je len chytľavým mottom, ktoré používajú bitcoineri. Uvedomenie si toho, že v číslach je nesmierna sila, je hlbokým poznaním.
+                Pochopenie tohto, ako aj inverzie existujúcej rovnováhy síl, ktorú to umožní, zmenilo môj pohľad na svet a budúcnosť, ktorá je pred nami.</p>
+              <p>Jedným priamym výsledkom tohto je tá skutočnosť, že nemusíte nikoho žiadať o povolenie, ak sa chcete podieľať na bitcoine. Nemusíte sa registrovať na žiadnej stránke,
+                nevedie ho žiadna spoločnosť, neposielate žiadosť žiadnej vládnej agentúre. Jednoducho si vygeneruje veľké číslo a v podstate môžete ísť na to. Centrálnou
+                autoritou založenia účtu je matematika. A len Boh vie, kto ju má na starosti.</p>
+              <figure> <img src="https://21lessons.com/assets/images/elliptic-curve-examples.png">
+                <figcaption>Príklady eliptickej krivky (cc-by-sa Emmanuel Boutet)</figcaption>
+              </figure>
+              <p>Bitcoin je vybudovaný na našom najlepšom chápaní reality. Zatiaľ čo existuje mnoho otvorených problémov vo fyzike, počítačovej vede a matematike, niektorými vecami sme si dosť istí.
+                Jednou z nich je skutočnosť, že existuje asymetria medzi hľadaním riešení a potvrdzovaním správnosti týchto riešení. Ďalšou je to, že výpočtová technika potrebuje energiu.
+                Inými slovami: hľadanie ihly v kôpke sena je zložitejšie ako overenie toho, či špicatá vec, ktorú držíte v ruke, je skutočne ihla alebo nie. A hľadanie ihly stojí prácu.</p>
+              <p>Rozsiahlosť priestoru bitcoinových adries je skutočne ohromujúca. Počet súkromných kľúčov ešte viac. Takisto je fascinujúce aká veľká časť nášho moderného sveta sa scvrkne na nepravdepodobnosť
+                nájdenia ihly v nesmierne veľkej kôpke sena. Tejto skutočnosti som si teraz ešte viac vedomý ako kedykoľvek predtým.</p>
+              <p>Bitcoin ma naučil, že v číslach je sila.</p>
+
+              <hr>
+
+              <h4 id="do-zajacej-nory">Do zajačej nory</h4>
+              <ul class="resources">
+                <li> <a href="https://en.bitcoin.it/wiki/Block_hashing_algorithm" target="_blank">Block hashing algorithm</a> rôzni autori Bitcoin Wiki</li>
+                <li> <a href="https://en.wikipedia.org/wiki/Discrete_logarithm#Cryptography" target="_blank">Discrete Logarithm</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://en.wikipedia.org/wiki/Dyson_sphere" target="_blank">Dyson Sphere</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://www.youtube.com/watch?v=S9JGmA5_unY" target="_blank">How secure is 256 bit security?</a> 3Blue1Brown</li>
+                <li> <a href="https://en.wikipedia.org/wiki/Landauer%27s_principle#Equation" target="_blank">Landauer’s Principle</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://en.wikipedia.org/wiki/Last_Glacial_Maximum" target="_blank">Last Glacial Maximum</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://en.wikipedia.org/wiki/P_versus_NP_problem#P_=_NP" target="_blank">P versus NP</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://en.wikipedia.org/wiki/SHA-2" target="_blank">SHA-2</a> rôzni autori Wikipedia</li>
+                <li> 📚 <a href="https://www.fooledbyrandomness.com/" taret="_blank">Fooled By Randomness - The Hidden Role of Chance in Life and in the Markets</a> Nassim Nicholas Taleb</li>
+              </ul>
+              <hr>
+
+
+                <ul class="lesson__navigation">
+                  <li><a href="./kapitola3.html" title="Technológia">Kapitola III</a></li>
+                  <li><a href="./obsah.html" title="Obsah">Obsah</a></li>
+                  <li><a href="./lekcia14.html" title="Úvahy o téze „Nedôveruj, preveruj“">Lekcia 16</a> <img src="./dummy/rabbit.png" title="Nasledujte bieleho zajaca..." /></li>
+                </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section-padding">
+    <div class="grid">
+      <div class="footer__container">
+        <p class="license"> <small> Pokiaľ nie je uvedené inak obsah na tomto webe je licencovaný pod <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA
+              4.0) license</a>. </small></p>
+        <!-- commenting out the footer
+        <ul class="footer__social">
+          <li><a rel="me" href="https://twitter.com/dergigi" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a rel="me" href="https://bitcoinhackers.org/@dergigi" target="_blank"><i class="fab fa-mastodon"></i></a></li>
+          <li><a rel="me" href="https://github.com/dergigi" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a rel="me" href="https://dergigi.com/support" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
+          <li><a rel="me" href="https://www.patreon.com/dergigi" target="_blank"><i class="fab fa-patreon"></i></a></li>
+        </ul>
+        <p class="sister_projects"> <small> Sister projects: <a href="https://bit.ly/21waysbook">21 Ways</a> · <a href="https://bitcoin-resources.com">Bitcoin Resources</a> · <a href="https://www.bitcoin-quotes.com">Bitcoin Quotes</a> </small></p>
+        <p class="license"> <small> Made with 🧡 by <a href="https://dergigi.com">Gigi</a> </small></p>
+      </div>
+    </div>
+  -->
+  </footer>
+  <script src="/assets/js/app.min.js"></script>
+  <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=24d60e4a-ce4c-42a0-9d88-40f766b2d4f4"></script>
+</body>
+
+</html>

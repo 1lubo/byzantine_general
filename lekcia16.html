@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lekcia 16</title>
+  <meta name="description" content="21 lekcií naučených pri páde do Bitcoinovej zajačej nory.. ">
+  <meta itemprop="name" content="Byzantský Generál">
+  <meta itemprop="description" content="Prieskym otázok a lekcií naučených pri páde do Bitcoinovej zajačej nory.">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body id="lekcia16" class="lesson-layout">
+  <header class="header"> <a class="header__title"> <img src="dummy/byzantine_logo.png" /> </a>
+  </header>
+  <main class="💈">
+    <section class="post">
+      <div>
+        <div class="post__header section-padding">
+          <div class="grid-small">
+            <h2>Lekcia 16</h2>
+            <h3>Úvahy o téze „Nedôveruj, preveruj“</h3>
+            <blockquote cite="">„A teraz dôkazy“, povedal kráľ, „a potom rozsudok“.
+            </blockquote>
+          </div>
+        </div>
+        <div class="post__content section-padding">
+          <div class="grid">
+            <div id="markdown">
+
+                <ul class="lesson__navigation">
+                  <li><a href="./lekcia15.html" title="Predchádzajúca"></a></li>
+                  <li><a href="./obsah.html" title="Obsah">Obsah</a></li>
+                  <li><a href="./lekcia17.html" title="Ďalšia"></a></li>
+                </ul>
+
+
+              <p>Cieľom bitcoinu je nahradiť alebo aspoň poskytnúť alternatívu ku konvenčným menám. Konvenčná mena je viazaná na centralizovaný orgán, bez ohľadu na to,
+                či hovoríme o právnom doklade ako je americký dolár alebo moderných monopolných peniazoch ako sú V-Bucks vo Fortnite. V oboch príkladoch ste odkázaný na to,
+                veriť centrálnej autorite, ktorá vydáva, spravuje a cirkuluje Vaše peniaze. Bitcoin rozväzuje toto puto a hlavným problémom, ktorý bitcoin rieši, je problém dôvery.</p>
+              <blockquote>
+                <p>“Hlavným problémom konvenčnej meny je dôvera, ktorá je potrebná na to, aby fungovala. […] Potrebujeme elektronický platobný systém založený na kryptografickom dôkaze namiesto dôvery”
+                  <cite><a href="https://bitcoin.org/bitcoin.pdf">Satoshi</a></cite>
+                </p>
+              </blockquote>
+              <p>Bitcoin rieši problém dôvery tým, že je celkom decentralizovaný, bez akéhokoľvek centrálneho serveru alebo dôverných strán. A nie iba bez dôverných <em>tretích</em> strán, ale úplne bez dôverných strán.
+                Keďže neexistuje žiadny centrálny orgán, nie <em>je</em> komu dôverovať. Úplná decentralizácia predstavuje inováciu. Je to podstata odolnosti bitcoinu,
+                dôvod, prečo ešte stále existuje. Kvôli decentralizácii tu máme ťažbu, nody, hardvérové peňaženky a áno, aj blockchain. Jediná vec, ktorej musíte „dôverovať“ je to, že naše chápanie
+                fyziky a matematiky nie je celkom mimo a že <a href="https://bitcoin.org/en/developer-guide#term-51-attack">väčšina</a> minerov pracuje čestne (k čomu sú motivovaní).</p>
+              <p>Zatiaľ čo bežný svet funguje za predpokladu <em>„dôveruj, ale preveruj“</em>, bitcoin funguje za predpokladu <em>„nedôveruj, preveruj“</em>. Satoshi veľmi jasne vysvetlil dôležitosť odstránenia
+                faktora dôvery v úvode aj závere <a href="https://bitcoin.org/bitcoin.pdf">bitcoinového whitepaperu</a>.</p>
+              <blockquote>
+                <p>“Záver: Navrhli sme systém pre elektronické transakcie bez toho, aby sme sa museli spoliehať na dôveru.” <cite><a href="https://bitcoin.org/bitcoin.pdf">Satoshi Nakamoto</a></cite></p>
+              </blockquote>
+              <p>Všimnite si, že „nespoliehanie sa na dôveru“ sa tu používa vo veľmi špecifickom kontexte. Hovoríme o dôverných tretích stranách, teda iných entitách, ktorým dôverujete,
+                že vyrábajú, držia a spracovávajú Vaše peniaze. Predpokladá sa napríklad, že môžete dôverovať svojmu počítaču.</p>
+              <p>Ako ukázal Ken Thompson vo svojej prednáške pri preberaní Turingovej ceny, dôvera je extrémne vrtkavá vec vo svete počítačov. Keď spúšťate program, musíte dôverovať všetkým typom
+                softvéru (a hardvéru), ktorý by mohol teoreticky nevhodne zmeniť program, ktorý sa pokúšate spustiť. Ako zhrnul Thompson vo svojej publikácii <a
+                  href="https://www.archive.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf"><em>Reflections on Trusting Trust</em></a>:
+                „Ponaučenie je jasné. Nemôžete dôverovať kódu, ktorý ste celý sami nevytvorili.“</p>
+              <figure> <img src="https://21lessons.com/assets/images/ken-thompson-hack.png"></figure>
+              <p>Thompson ukázal, že aj keď máte prístup k zdrojovému kódu, váš kompilátor — alebo každý iný programovací program alebo hardvér — by mohol byť narušený a detekcia týchto zadných vrátok by bola zložitá.
+                V praxi teda systém nepostavený na dôvere neexistuje. Museli by ste vytvoriť všetok softvér a hardvér (jednotky, kompilátory, linkery, atď.) z ničoho, bez pomoci externého softvéru alebo zariadení
+                založených na softvéri.</p>
+              <blockquote>
+                <p>“Ak chcete urobiť jablkový koláč z ničoho, najskôr musíte vymyslieť vesmír.” <cite><a href="https://en.wikipedia.org/wiki/Cosmos_%28Carl_Sagan_book%29">Carl Sagan</a></cite></p>
+              </blockquote>
+              <p>Hack Kena Thompsona sú obzvlášť geniálne a ťažko detekovateľné zadné vrátka, poďme sa teda rýchlo pozrieť na ťažko detekovateľné zadné vrátka, ktoré fungujú bez toho aby zmenili softvér.
+                Výskumníci našli spôsob ako narušiť hardvér kritický pre bezpečnosť zmenou polarity kremičitých nečistôt. Jednoduchou zmenou fyzikálnych vlastností materiálu, z ktorého sú vyrobené
+                počítačové čipy, bolo možné narušiť kryptograficky bezpečný generátor náhodných čísel. Keďže túto zmenu nevidieť, zadné vrátka sa nedajú detekovať optickou kontrolou, čo je jeden z najvýznamnejších
+                mechanizmov na detekciu narušenia pri takýchto čipoch.</p>
+              <figure> <img src="https://21lessons.com/assets/images/stealthy-hardware-trojan.png">
+                <figcaption>Tajné hardvérové trójske kone na úrovni dotovania polovodičov od Becker, Regazzoni, Paar, Burleson</figcaption>
+              </figure>
+              <p>Naháňa to strach? No aj keď by ste dokázali vybudovať všetko z ničoho, aj tak by ste museli dôverovať základnej matematike. Museli by ste veriť, že <a href="https://en.bitcoin.it/wiki/Secp256k1">secp256k1</a> je eliptická krivka bez
+                zadných vrátok.
+                Áno, škodlivé spätné cesty sa dajú vložiť do matematických základov kryptografických funkcií a preukázateľne sa to <a href="https://en.wikipedia.org/wiki/Dual_EC_DRBG">už stalo</a> minimálne raz. Existujú dobré dôvody na paranoju a
+                dôvody veriť,
+                že všetko od hardvéru, cez softvér, až po eliptické krivky môže mať <a href="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography#Backdoors">zadné vrátka</a>.</p>
+              <blockquote>
+                <p>“Don’t trust. Verify.”</p>
+              </blockquote>
+              <p>Vyššie uvedené príklady by mali znázorňovať, že výpočtová technika <em>bez dôvery</em> je utópiou. Bitcoin je pravdepodobne práve ten systém, ktorý sa dostáva najbližšie k tejto utópii,
+                ale aj tak zahŕňa <em>minimálnu dôveru</em> — je zameraný na to, aby sa dôvera v maximálnej možnej miere eliminovala. Reťazec dôvery je nekonečný, pretože budete musieť dôverovať aj tomu,
+                že výpočtová technika si vyžaduje energiu, že P sa nerovná NP a že ste naozaj v základnej realite a nie ste uväznení v simulácii škodlivými účastníkmi.</p>
+              <p>Vývojári pracujú na nástrojoch a postupoch pre ďalšiu minimalizáciu zvyšnej dôvery. Napríklad vývojári Bitcoinu vytvorili <a href="https://gitian.org/">Gitian</a>, čo je metóda distribúcie softvéru na
+                vytvorenie deterministických buildov. Jej myšlienkou je to, že ak dokážu viacerí vývojári reprodukovať rovnaké binárne sústavy, šanca škodlivého narušenia sa minimalizuje.
+                Vyšperkované zadné vrátka nie sú jediným vektorom útoku. Skutočnou hrozbou je aj obyčajné vydieranie. Tak ako v hlavnom protokole, decentralizácia sa používa na minimalizáciu dôvery.</p>
+              <p>Vykonávajú sa rôzne úsilia na vylepšenie <a href="https://www.gnu.org/software/guix/manual/en/html_node/Bootstrapping.html">bootstrapového</a> problému sliepky a vajca, ktorý tak dokonale popísal Ken Thompson.
+                jasné riadenie packagov vedúce k buildom navrhnutým tak, že každý jeden z ich bitov je presne reprodukovateľný. Výsledkom je, že už nemusíte dôverovať žiadnym serverom poskytujúcim softvér, keďže môžete overiť,
+                Jedným takýmto úsilím je <a href="https://www.gnu.org/software/guix/">Guix</a> (vyslovuj <em>gíks</em>), ktorý používa funkčne
+                či binárny systém softvéru, ktorý sťahujete nebol náhodou niekým zmanipulovaný. Nedávno bol do procesu programovania Bitcoinu zlúčený <a href="https://github.com/bitcoin/bitcoin/pull/15277">pull-request</a>, ktorý integruje Guix.</p>
+              <figure> <img src="https://21lessons.com/assets/images/guix-bootstrap-dependencies.png">
+                <figcaption>Čo bolo prvé? Sliepka alebo vajce?</figcaption>
+              </figure>
+              <p>Bitcoin sa našťastie nespolieha na jeden algoritmus alebo na jeden hardvér. Jedným z výsledkov radikálnej decentralizácie Bitcoinu je model distribuovanej bezpečnosti.
+                Hoci by sme nemali brať hrozbu zadných vrátok popísaných vyššie na ľahkú váhu, je nepravdepodobné, že by sa narušila každá softvérová peňaženka, každá hardvérová peňaženka, každá kryptografická knižnica,
+                každá implementácia nodov a každý kompilátor každého jazyka. Je to možné, ale vysoko nepravdepodobné.</p>
+              <p>Všimnite si, že môžete generovať súkromný kľúč tým, že sa nebudete spoliehať na žiadny hardvér alebo softvér. Môžete si niekoľko krát <a href="https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch04.asciidoc#private-keys">hodiť
+                  mincou</a>,
+                aj keď v závislosti od vašej mince a štýlu hádzania by tento zdroj náhodnosti nemusel byť dostatočne náhodný. Existuje dôvod, prečo by protokoly skladovania ako je <a href="https://glacierproObsahol.org/">Glacier</a>,
+                odporúčali používať kocky ako z kasína ako jeden z dvoch zdrojov entropie.</p>
+              <p>Bitcoin ma prinútil premýšľať, čo vlastne so sebou prinesie to, ak nebudem nikomu dôverovať. Zvýšilo a tým moje povedomie o samovzniku a implicitnom reťazci dôvery pri vývoji a spúšťaní softvéru.
+                Takisto to zvýšilo moje povedomie o mnohých spôsoboch, akými sa dá softvér a hardvér narušiť.</p>
+              <p>Bitcoin ma naučil nedôverovať, ale preverovať.</p>
+
+              <hr>
+
+              <h4 id="do-zajacej-nory">Do zajačej nory</h4>
+              <ul class="resources">
+                <li> <a href="https://www.archive.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf" target="_blank">Reflections on Trusting Trust</a> Ken Thompson</li>
+                <li> <a href="https://nakamotoinstitute.org/trusted-third-parties/" target="_blank">Trusted Third Parties Are Security Holes</a> Nick Szabo</li>
+                <li> <a href="https://bitcoin.org/bitcoin.pdf" target="_blank">The Bitcoin Whitepaper</a> Satoshi Nakamoto</li>
+                <li> <a href="https://bitcoin.org/en/developer-guide#term-51-attack" target="_blank">51% Attack</a> rôzni autori Bitcoin Developer Guide</li>
+                <li> <a href="https://www.gnu.org/software/guix/manual/en/html_node/Bootstrapping.html" target="_blank">Bootstrapping</a> rôzni autori Guix Manual</li>
+                <li> <a href="https://en.wikipedia.org/wiki/Dual_EC_DRBG" target="_blank">Dual EC DRBG</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography#Backdoors" target="_blank">ECC Backdoors</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://en.bitcoin.it/wiki/Secp256k1" target="_blank">Secp256k1</a> rôzni autori Bitcoin Wiki</li>
+              </ul>
+              <hr>
+
+
+                <ul class="lesson__navigation">
+                  <li><a href="./lekcia15.html" title="Sila v číslach">Lekcia 15</a></li>
+                  <li><a href="./obsah.html" title="Obsah">Obsah</a></li>
+                  <li><a href="./lekcia17.html" title="Stanovenie času stojí prácu">Lekcia 17</a> <img src="./dummy/rabbit.png" title="Nasledujte bieleho zajaca..." /></li>
+                </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section-padding">
+    <div class="grid">
+      <div class="footer__container">
+        <p class="license"> <small> Pokiaľ nie je uvedené inak obsah na tomto webe je licencovaný pod <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA
+              4.0) license</a>. </small></p>
+        <!-- commenting out the footer
+        <ul class="footer__social">
+          <li><a rel="me" href="https://twitter.com/dergigi" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a rel="me" href="https://bitcoinhackers.org/@dergigi" target="_blank"><i class="fab fa-mastodon"></i></a></li>
+          <li><a rel="me" href="https://github.com/dergigi" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a rel="me" href="https://dergigi.com/support" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
+          <li><a rel="me" href="https://www.patreon.com/dergigi" target="_blank"><i class="fab fa-patreon"></i></a></li>
+        </ul>
+        <p class="sister_projects"> <small> Sister projects: <a href="https://bit.ly/21waysbook">21 Ways</a> · <a href="https://bitcoin-resources.com">Bitcoin Resources</a> · <a href="https://www.bitcoin-quotes.com">Bitcoin Quotes</a> </small></p>
+        <p class="license"> <small> Made with 🧡 by <a href="https://dergigi.com">Gigi</a> </small></p>
+      </div>
+    </div>
+  -->
+  </footer>
+  <script src="/assets/js/app.min.js"></script>
+  <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=24d60e4a-ce4c-42a0-9d88-40f766b2d4f4"></script>
+</body>
+
+</html>

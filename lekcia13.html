@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lekcia 13</title>
+  <meta name="description" content="21 lekcií naučených pri páde do Bitcoinovej zajačej nory.. ">
+  <meta itemprop="name" content="Byzantský Generál">
+  <meta itemprop="description" content="Prieskym otázok a lekcií naučených pri páde do Bitcoinovej zajačej nory.">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body id="lekcia13" class="lesson-layout">
+  <header class="header"> <a class="header__title"> <img src="dummy/byzantine_logo.png" /> </a>
+  </header>
+  <main class="💈">
+    <section class="post">
+      <div>
+        <div class="post__header section-padding">
+          <div class="grid-small">
+            <h2>Lekcia 13</h2>
+            <h3>Šialenstvo frakčnej rezervy</h3>
+            <blockquote cite="">Beda! Bolo príliš neskoro: neustále rástla a rástla a napokon musela pokľaknúť: o chvíľu už na to nebol priestor a pokúsila sa ľahnúť si,
+              s jedným lakťom opretým o dvere a druhou rukou si držiac hlavu. Stále rástla a napokon si dala jednu ruku von z okna a jednu nohu si strčila do komína a povedala si
+              „Teraz už viac neviem urobiť – čo bude so mnou?“
+            </blockquote>
+          </div>
+        </div>
+        <div class="post__content section-padding">
+          <div class="grid">
+            <div id="markdown">
+
+                <ul class="lesson__navigation">
+                  <li><a href="./lekcia12.html" title="Predchádzajúca"></a></li>
+                  <li><a href="./obsah.html" title="Obsah">Obsah</a></li>
+                  <li><a href="./lekcia14.html" title="Ďalšia"></a></li>
+                </ul>
+
+
+              <p>Hodnota a peniaze nie sú triviálne témy, najmä v dnešných časoch. Proces vytvárania peňazí v našom bankovom systéme je rovnako netriviálny a nemôžem sa zbaviť pocitu,
+                že je tomu tak zámerne. To, s čím som sa predtým stretol iba v akademickej obci, je zrejme bežnou praxou aj vo svete financií: nič nie je vysvetlené jednoducho,
+                nie pretože by to bolo skutočne komplexné, ale preto, lebo pravda je skrytá za mnohými vrstvami žargónu a <em>zdanlivej</em> komplexnosti. „Expanzná menová politika, kvantitatívne uvoľňovanie,
+                daňové stimuly pre ekonomiku.“ Diváci pokyvujú hlavami na znak súhlasu, hypnotizovaní komplikovanými slovami.</p>
+              <p>Frakčné rezervné bankovníctvo a kvantitatívne uvoľňovanie sú dve z týchto komplikovaných slov, ktoré zakrývajú to, čo sa skutočne deje tým, že to maskujú ako komplexnú a ťažko pochopiteľnú záležitosť.
+                Ak by ste to vysvetlili päťročnému dieťaťu, šialenstvo oboch bude rýchlo jasné.</p>
+              <p>Godfrey Bloom, ktorý sa obrátil na Európsky parlament počas <a href="https://www.youtube.com/watch?v=hYzX3YZoMrs" class="">spoločnej debaty</a>, to vyjadril omnoho lepšie ako by som to dokázal ja sám:</p>
+              <blockquote>
+                <p>“[…] v skutočnosti nechápete koncept bankovníctva. Všetky banky sú na mizine. Bank Santander, Deutsche Bank, Royal Bank of Scotland — všetky sú na mizine! A prečo sú na mizine? To je nie je Boží zásah.
+                  To nie je žiadna tsunami. Sú na mizine, pretože tu máme systém s názvom „frakčné rezervné bankovníctvo“, čo znamená, že banky môžu požičiavať peniaze, ktoré v skutočnosti vôbec nemajú! To je trestuhodný škandál
+                  a už to trvá príliš dlho. […]</p>
+                <p>Máme pred sebou falšovanie — niekedy nazývané kvantitatívne uvoľňovanie — ale stále je to falšovanie. Umelé tlačenie peňazí, ktoré ak by vykonal bežný človek,
+                  tak by si veľmi dlho posedel vo väzení […] a kým nezačneme posielať bankárov — a ja dodávam ešte centrálnych bankárov a politikov — za tento skutok do väzenia, bude pokračovať.”
+                  <cite><a href="https://www.youtube.com/watch?v=hYzX3YZoMrs">Godfrey Bloom</a></cite>
+                </p>
+              </blockquote>
+              <p>Dovoľte, aby som zopakoval tú najdôležitejšiu časť: banky môžu požičiavať peniaze, ktoré v skutočnosti vôbec nemajú.</p>
+              <p>Vďaka frakčnému rezervnému bankovníctvu si musí banka uchovávať veľmi malú <em>frakciu</em> každého dolára, ktorý má. Táto frakcia sa pohybuje niekde od 0 do 10%, obyčajne bližšie ku spodnej hranici,
+                čo veci ešte viac zhoršuje.</p>
+              <p>Poďme použiť konkrétny príklad, aby sme lepšie pochopili tento bláznivý nápad: Postačí nám frakcia 10% a mali by sme dokázať všetko si prerátať v hlave. Win-win. Takže, ak zoberiete 100 USD do banky,
+                pretože ich nechcete skladovať pod vankúšom, banka si musí ponechať len ich dohodnutú <em>frakciu</em>. V našom príklade by to teda bolo 10 USD, pretože 10% zo 100 USD je 10 USD. Jednoduché, nie?</p>
+              <p>Takže čo robia banky so zvyškom peňazí? Čo sa deje s vašimi 90 dolármi? Robia to, čo banky bežne robia, požičajú ich ďalším ľuďom. Výsledkom je <a href="https://en.wikipedia.org/wiki/Money_multiplier">efekt násobenia peňazí</a>,
+                ktorý enormne
+                navyšuje zásoby peňazí v ekonomike. Váš pôvodný vklad 100 USD sa čoskoro zmení na 190 USD. Tým, že sa 90% frakcia z novo vytvorených 90 USD požičia, čoskoro sa v ekonomike zmení na 271. A následne na 343.90. Zásoby peňazí sa
+                rekurzívne navyšujú,
+                keďže banky doslova požičiavajú peniaze, ktoré nemajú. Dokonca aj bez kúzelnej formulky abraka dabra banky kúzlom premenia 100 USD na tisíc dolárov alebo viac. 10 násobné opakovanie tohto procesu je jednoduché.
+                Chce to len niekoľko cyklov požičania.</p>
+              <figure> <img src="https://21lessons.com/assets/images/money-multiplier.png"></figure>
+              <p>Nepochopte ma zle: Na požičiavaní nie je nič zlé. Ani na úroku nie je nič zlé. Nie je nič zlé na tom, aby staré dobré banky ukladali Váš majetok na bezpečnejšom mieste ako je Váš nočný stolík.</p>
+              <p>Centrálne banky sú však inou beštiou. Ohavnosti vytvorené finančnými nariadeniami, napolovicu verejné, na polovicu súkromné, hra na Boha s niečím, čo ovplyvňuje každého, kto je súčasťou globálnej civilizácie, bez svedomia,
+                so záujmom len na bezprostrednej budúcnosti a zdanlivo bez akejkoľvek zodpovednosti alebo možnosti <a href="https://i.imgur.com/O03TBuP.jpg" class="hoverZoomLink">auditu</a>.</p>
+              <p>Zatiaľ čo je Bitcoin ešte stále inflačný, čoskoro tomu tak už nebude. Prísne obmedzená zásoba 21 miliónov bitcoinov sa napokon celkom zbaví inflácie. Teraz tu máme dva menové svety:
+                svet inflácie, kde sa peniaze tlačia svojvoľne a svet Bitcoinu, kde je finančný prísun fixný a ľahko kontrolovateľný pre každého. Jeden je nám vtláčaný násilím, pričom k
+                tomu druhému sa môže pripojiť každý, kto chce. Neexistujú žiadne bariéry pre vstup, nikoho nežiadame o povolenie. Účasť je dobrovoľná. V tom je krása Bitcoinu.</p>
+              <p>Myslím si, že spor medzi <a href="https://en.wikipedia.org/wiki/Keynesian_economics">keynesovskou</a> a <a href="https://en.wikipedia.org/wiki/Austrian_School">rakúskou</a> ekonomickou školou už nie je len akademický.
+                Satoshimu sa podarilo vytvoriť systém presunu hodnoty na steroidoch, a v tomto procese vytvoril najlepšie peniaze, aké kedy existovali. Tak či onak, čím ďalej tým viac ľudí sa dozvedá o podvode, ktorým je frakčné finančné
+                bankovníctvo.
+                Ak prídu k podobným záverom ako väčšina stúpencov rakúskej ekonomickoej školy a Bitcoinerov, mohli by sa pripojiť k neustále rastúcemu internetu peňazí. Nikto ich nedokáže zastaviť, ak sa tak rozhodnú.</p>
+              <p>Bitcoin ma naučil, že frakčné rezervné bankovníctvo je čistým šialenstvom.</p>
+
+              <hr>
+
+              <h4 id="do-zajacej-nory">Do zajačej nory</h4>
+              <ul class="resources">
+                <li> <a href="https://en.wikipedia.org/wiki/Austrian_School" target="_blank">Austrian School</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://en.wikipedia.org/wiki/Keynesian_economics" target="_blank">Keynesian Economics</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://en.wikipedia.org/wiki/Money_multiplier" target="_blank">Money Multiplier</a> rôzni autori Wikipedia</li>
+                <li> <a href="https://www.youtube.com/watch?v=hYzX3YZoMrs" target="_blank">Why the whole banking system is a scam</a> Godfrey Bloom</li>
+                <li> 🎧 <a href="https://stephanlivera.com/episode/51" taret="_blank">Jörg Guido Hülsmann on Fiat Money and Fractional Reserve Banking</a><br> Podcast by Stephana Liveru</li>
+                <li> 🎧 <a href="https://stephanlivera.com/episode/93/" taret="_blank">Raoul Pal on Global Macro Risks and Bitcoin</a><br> Podcast by Stephana Liveru</li>
+                <li> 📚 <a href="https://wiki.mises.org/wiki/The_Creature_from_Jekyll_Island" taret="_blank">The Creature From Jekyll Island</a> G. Edward Griffin</li>
+              </ul>
+              <hr>
+              <div class="footnotes">
+
+                <fn id="hodl">
+                  &#42; hodl - preklep v slove 'hold'- držať. Vo svojom poste na Bitcoin Talk Forums z 18. decembra 2013 s názbvom 'I AM HODLING' GameKyuubi argumentuje v prospech držania bitcoinu aj počas krachu.
+                </fn><br>
+                <fn id="dsc">
+                  &#8224; <a href="https://www.dollarshaveclub.com/">Dollar Shave Club</a> - Americká spoločnosť zameraná na holiace potreby.
+                </fn>
+              </div>
+
+                <ul class="lesson__navigation">
+                  <li><a href="./lekcia12.html" title="História a pád peňazí">Lekcia 12</a></li>
+                  <li><a href="./obsah.html" title="Obsah">Obsah</a></li>
+                  <li><a href="./lekcia14.html" title="Skutočné peniaze">Lekcia 14</a> <img src="./dummy/rabbit.png" title="Nasledujte bieleho zajaca..." /></li>
+                </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section-padding">
+    <div class="grid">
+      <div class="footer__container">
+        <p class="license"> <small> Pokiaľ nie je uvedené inak obsah na tomto webe je licencovaný pod <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA
+              4.0) license</a>. </small></p>
+        <!-- commenting out the footer
+        <ul class="footer__social">
+          <li><a rel="me" href="https://twitter.com/dergigi" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a rel="me" href="https://bitcoinhackers.org/@dergigi" target="_blank"><i class="fab fa-mastodon"></i></a></li>
+          <li><a rel="me" href="https://github.com/dergigi" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a rel="me" href="https://dergigi.com/support" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
+          <li><a rel="me" href="https://www.patreon.com/dergigi" target="_blank"><i class="fab fa-patreon"></i></a></li>
+        </ul>
+        <p class="sister_projects"> <small> Sister projects: <a href="https://bit.ly/21waysbook">21 Ways</a> · <a href="https://bitcoin-resources.com">Bitcoin Resources</a> · <a href="https://www.bitcoin-quotes.com">Bitcoin Quotes</a> </small></p>
+        <p class="license"> <small> Made with 🧡 by <a href="https://dergigi.com">Gigi</a> </small></p>
+      </div>
+    </div>
+  -->
+  </footer>
+  <script src="/assets/js/app.min.js"></script>
+  <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=24d60e4a-ce4c-42a0-9d88-40f766b2d4f4"></script>
+</body>
+
+</html>

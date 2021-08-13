@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lekcia 17</title>
+  <meta name="description" content="21 lekcií naučených pri páde do Bitcoinovej zajačej nory.. ">
+  <meta itemprop="name" content="Byzantský Generál">
+  <meta itemprop="description" content="Prieskym otázok a lekcií naučených pri páde do Bitcoinovej zajačej nory.">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body id="lekcia17" class="lesson-layout">
+  <header class="header"> <a class="header__title"> <img src="dummy/byzantine_logo.png" /> </a>
+  </header>
+  <main class="💈">
+    <section class="post">
+      <div>
+        <div class="post__header section-padding">
+          <div class="grid-small">
+            <h2>Lekcia 17</h2>
+            <h3>Stanovenie času stojí prácu</h3>
+            <blockquote cite="">„Ach jaj! Prídem neskoro!“</blockquote>
+          </div>
+        </div>
+        <div class="post__content section-padding">
+          <div class="grid">
+            <div id="markdown">
+
+                <ul class="lesson__navigation">
+                  <li><a href="./lekcia16.html" title="Predchádzajúca"></a></li>
+                  <li><a href="./obsah.html" title="Obsah">Obsah</a></li>
+                  <li><a href="./lekcia18.html" title="Ďalšia"></a></li>
+                </ul>
+
+              <p>Často sa hovorí, že bitcoiny sa ťažia, vďaka tomu, že tisíce počítačov spolupracujú na riešení veľmi komplexných matematických problémov. Je potrebné vyriešiť niektoré problémy a ak vypočítate
+                správnu odpoveď, „vytvoríte“ bitcoin. Zatiaľ čo tento zjednodušený pohľad na ťažbu bitcoinu je ľahšie pochopiteľný, istým spôsobom mu chýba hlavná pointa. Bitcoiny sa nevyrábajú alebo
+                nevytvárajú a celý tento proces nie je vlastne o riešení nejakého matematického problému. Matematika tu zároveň nie je nijako obzvlášť komplexná. Komplexné je stanoviť čas v decentralizovanom systéme.</p>
+              <p>Ako sa uvádza v whitepaperi, systém proof-of-work (alebo ťažba) je spôsob implementácie serveru s distribuovanou časovou značkou.</p>
+              <figure> <img src="https://21lessons.com/assets/images/bitcoin-whitepaper-timestamp-wide.png">
+                <figcaption>Úryvky z whitepapera. Počul som niekoho povedať časová reťaz?</figcaption>
+              </figure>
+              <p>Keď som prvý krát zistil ako Bitcoin funguje, naučil som sa aj to, že metóda proof-of-work je neefektívna a zbytočná. Po nejakej dobe sa <a href="https://dergigi.com/2018/06/10/bitcoin-s-energy-consumption/">môj pohľad na spotrebu
+                  energie pri Bitcoine začal meniť</a>.
+                Zdá sa, že proof-of-work je ešte stále v značnej miere nepochopený aj v súčasnosti, teda v roku 10 AB (po Bitcoine).</p>
+              <p>Keďže problémy riešené v systéme proof-of-work sú vymyslené, mnohí ľudia si myslia, že je to zbytočná práca. Ak sa zameriame len na výpočty, je to pochopiteľný záver.
+                Bitcoin však nie je o výpočtoch. Jedná sa tu o spôsob ako sa <em>nezávsile od seba zhodnúť na poradí vecí</em>.</p>
+              <p>Proof-of-work je systém, v ktorom môže každý potvrdiť, čo sa stalo a v akom poradí sa to stalo.
+                Toto nezávislé potvrdzovanie vedie ku konsenzu, individuálnej dohode medzi viacerými stranami o tom, kto čo vlastní.</p>
+              <p>V radikálne decentralizovanom prostredí nemáme luxus absolútneho času. Použitie akýchkoľvek hodín by znamenalo zavedenie dôvernej tretej strany, centrálny bod v systéme, na ktorý sa treba spoliehať a ktorý by
+                mohol byť cieľom útoku. „Hlavným problémom je časovanie“, <a href="https://grisha.org/blog/2018/01/23/explaining-proof-of-work/">zdôrazňuje</a> Grisha Trubetskoy. A Satoshi tento problém geniálne vyriešil implementáciou
+                decentralizovaných hodín cez proof-of-work
+                blockchain. Každý vopred súhlasí s tým, že reťazec s najviac kumulatívnou prácou je zdrojom pravdy. Na základe definície sa stalo práve toto. Túto dohodu teraz poznáme ako Nakamotov konsenzus.</p>
+              <blockquote>
+                <p>“Sieť označuje transakcie časovými známkami hašovaním do neustále pokračujúceho reťazca, ktorý slúži ako dôkaz sekvencie udalostí”
+                  <cite><a href="https://bitcoin.org/bitcoin.pdf">Satoshi Nakamoto</a></cite>
+                </p>
+              </blockquote>
+              <p>Bez konzistentného spôsobu stanovenia času neexistuje žiadny konzistentný spôsob stanovenia toho, čo bolo predtým, a čo neskôr. Spoľahlivé zoraďovanie nie je možné.
+                Ako je to uvedené vyššie Nakamotov konsenzus je spôsobom akým Bitcoin konzistentne stanovuje čas. Štruktúra podnetov v systéme produkuje pravdepodobnostné, decentralizované hodiny,
+                využívajúc na to lakomosť a sebeckosť jednotlivých súperiacich účastníkov. Skutočnosť, že tieto hodiny sú nepresné, je irelevantná, pretože poradie udalostí je napokon jednoznačné
+                a môže ho overiť každý.</p>
+              <p>Vďaka systému proof-of-work sú práca aj potvrdzovanie práce radikálne decentralizované. Každý sa môže pripojiť a odísť podľa vlastnej vôle a každý môže všetko kedykoľvek potvrdiť.
+                A nielen to, ale každý môže potvrdiť stav systému <em>individuálne</em>, bez toho, sa musel pri potvrdzovaní spoliehať na niekoho iného.</p>
+              <p>Pochopenie systému proof-of-work zaberie čas. Často to ide proti intuícii a zatiaľ čo pravidlá sú jednoduché, vedú k celkom komplexným javom. Mne pomohlo keď som zmenil svoj pohľad na ťažbu.
+                Užitočné, nie zbytočné. Potvrdzovanie, nie výpočty. Čas, nie bloky.</p>
+              <p>Bitcoin ma naučil, že stanovenie času z komplikované, najmä ak ste decentralizovaní.</p>
+
+              <hr>
+              <h4 id="cez-zrkadlo">Cez zrkadlo</h4>
+              <ul class="articles">
+                <li> <a href="https://dergigi.com/2018/06/10/bitcoin-s-energy-consumption/" taret="_blank">Bitcoin's Energy Consumption - A shift in perspective</a></li>
+                <li> <a href="https://dergigi.com/2021/01/14/bitcoin-is-time/" taret="_blank">Bitcoin Is Time</a></li>
+              </ul>
+              <h4 id="do-zajacej-nory">Do zajačej nory</h4>
+              <ul class="resources">
+                <li> <a href="http://www.truthcoin.info/blog/pow-cheapest/" target="_blank">Nothing is Cheaper than Proof of Work</a> Paul Sztorc</li>
+                <li> <a href="https://archive.is/3IpA4" target="_blank">Bitcoin Doesn’t Waste Electricity</a> Beautyon</li>
+                <li> <a href="https://grisha.org/blog/2018/01/23/explaining-proof-of-work/" target="_blank">Blockchain Proof-of-Work Is a Decentralized Clock</a> Gregory Trubetskoy</li>
+                <li> <a href="https://bitcointechtalk.com/the-anatomy-of-proof-of-work-98c85b6f6667" target="_blank">The Anatomy of Proof-of-Work</a> Hugo Nguyen</li>
+                <li> <a href="https://medium.com/@hugonguyen/work-is-timeless-stake-is-not-554c4450ce18" target="_blank">Work is Timeless, Stake is Not</a> Hugo Nguyen</li>
+                <li> <a href="https://www.unchained-capital.com/blog/bitcoin-does-not-waste-energy/" target="_blank">Bitcoin Does Not Waste Energy</a> Parker Lewis</li>
+                <li> <a href="https://unchained-capital.com/blog/law-of-hash-horizons/" target="_blank">Bitcoin Astronomy</a> Dhruv Bansal</li>
+                <li> <a href="https://www.coindesk.com/the-last-word-on-bitcoins-energy-consumption" target="_blank">The Last Word on Bitcoin’s Energy Consumption</a> Nic Carter</li>
+                <li> <a href="https://en.bitcoin.it/wiki/Controlled_supply" target="_blank">Controlled Supply</a> rôzni autori Bitcoin Wiki</li>
+                <li> <a href="https://en.bitcoin.it/wiki/Mining" target="_blank">Mining</a> rôzni autori Bitcoin Wiki</li>
+                <li> 🎧 <a href="https://www.theinvestorspodcast.com/episodes/trace-mayer-bitcoin/" taret="_blank">Trace Mayer on Bitcoin Valuation, Trust, and Energy Consumption</a><br> Podcast Brestona Pysha and Stiga Brodersena</li>
+                <li> 🎧 <a href="https://citizenbitcoin.world/episodes/robert-breedlove-understanding-time-money-and-bitcoin-from-first-principles" taret="_blank">Robert Breedlove on Understanding Time, Money and Bitcoin from First Principles</a><br>
+                  Podcast Bradyho Swensona</li>
+              </ul>
+              <hr>
+
+                <ul class="lesson__navigation">
+                  <li><a href="./lekcia16.html" title="Úvahy o téze „Nedôveruj, preveruj“">Lekcia 16</a></li>
+                  <li><a href="./obsah.html" title="Obsah">Obsah</a></li>
+                  <li><a href="./lekcia18.html" title="Pohybuj sa pomaly a nerozbíjaj veci">Lekcia 18</a> <img src="./dummy/rabbit.png" title="Nasledujte bieleho zajaca..." /></li>
+                </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section-padding">
+    <div class="grid">
+      <div class="footer__container">
+        <p class="license"> <small> Pokiaľ nie je uvedené inak obsah na tomto webe je licencovaný pod <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA
+              4.0) license</a>. </small></p>
+        <!-- commenting out the footer
+        <ul class="footer__social">
+          <li><a rel="me" href="https://twitter.com/dergigi" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a rel="me" href="https://bitcoinhackers.org/@dergigi" target="_blank"><i class="fab fa-mastodon"></i></a></li>
+          <li><a rel="me" href="https://github.com/dergigi" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a rel="me" href="https://dergigi.com/support" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
+          <li><a rel="me" href="https://www.patreon.com/dergigi" target="_blank"><i class="fab fa-patreon"></i></a></li>
+        </ul>
+        <p class="sister_projects"> <small> Sister projects: <a href="https://bit.ly/21waysbook">21 Ways</a> · <a href="https://bitcoin-resources.com">Bitcoin Resources</a> · <a href="https://www.bitcoin-quotes.com">Bitcoin Quotes</a> </small></p>
+        <p class="license"> <small> Made with 🧡 by <a href="https://dergigi.com">Gigi</a> </small></p>
+      </div>
+    </div>
+  -->
+  </footer>
+  <script src="/assets/js/app.min.js"></script>
+  <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=24d60e4a-ce4c-42a0-9d88-40f766b2d4f4"></script>
+</body>
+
+</html>
