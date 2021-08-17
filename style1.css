@@ -270,6 +270,11 @@ a {
   list-style-type: none;
 }
 
+.books, .lesson__navigation, .lesson__navigation li, .resources__navigation {
+    margin: 0;
+    padding: 0;
+}
+
 code, pre {
   color: #aaa;
   background: #111;
