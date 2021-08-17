@@ -92,18 +92,21 @@ div {
   text-align: justify;
 }
 
-@media (min-width: 65em)
+@media (min-width: 65em){
 body {
     font-size: 107.5%;
+  }
 }
 
-@media (min-width: 54em)
+@media (min-width: 54em){
 body {
     font-size: 105%;
+  }
 }
-@media (min-width: 32em)
+@media (min-width: 32em){
 body {
     font-size: 102.5%;
+  }
 }
 
 footer {
@@ -161,10 +164,14 @@ cite {
 
 
 .grid {
-  width: 65%;
-  margin-right: auto;
-  margin-left: auto;
+    width: 100%;
+    max-width: 45em;
 }
+.grid, .grid-large, .grid-small, .grid-xlarge, .subscribe__container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #markdown blockquote {
     border-top: 2px solid #111;
     border-bottom: 2px solid #111;
