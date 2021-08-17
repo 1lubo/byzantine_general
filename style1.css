@@ -12,6 +12,39 @@ body {
   background-color: #020202;
 }
 
+@media (min-width: 65em) {
+  body {
+    font-size: 107.5%;
+  }
+}
+
+@media (min-width: 54em) {
+  body {
+    font-size: 105%;
+  }
+}
+
+@media (min-width: 32em) {
+  body {
+    font-size: 102.5%;
+  }
+}
+
+@media (min-width: 54em) {
+  .section-padding {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
+
+@media (min-width: 32em) {
+  .section-padding {
+    padding: 3em 2em;
+  }
+}
+.section-padding {
+  padding: 2em 1em;
+}
 header {
   position: fixed;
   top: 0;
@@ -27,8 +60,9 @@ header {
   background-color: #111;
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
+
 figure {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 sup {
@@ -55,14 +89,16 @@ h3 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
+
 blockquote {
   display: block;
   margin-block-start: 1em;
@@ -71,7 +107,6 @@ blockquote {
   margin-inline-end: 40px;
   font-weight: 300;
   text-align: center;
-
 }
 
 main {
@@ -89,24 +124,7 @@ section {
 
 div {
   display: block;
-  text-align: justify;
-}
-
-@media (min-width: 65em){
-body {
-    font-size: 107.5%;
-  }
-}
-
-@media (min-width: 54em){
-body {
-    font-size: 105%;
-  }
-}
-@media (min-width: 32em){
-body {
-    font-size: 102.5%;
-  }
+  text-align: center;
 }
 
 footer {
@@ -125,8 +143,8 @@ footer {
 }
 
 figcaption {
-    font-size: .9em;
-    color: #aaa;
+  font-size: .9em;
+  color: #aaa;
 }
 
 p {
@@ -139,13 +157,14 @@ p {
   margin-bottom: 1.5rem;
   font-size: 1.25em;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
 
 cite:before {
-    content: "\2014 \0020";
+  content: "\2014 \0020";
 }
 
 cite {
@@ -158,9 +177,11 @@ cite {
   line-height: 1.7;
   content: "\2014 \0020";
 }
-.footnotes{
+
+.footnotes {
   padding: 3em 2em;
 }
+
 
 
 .grid {
@@ -171,18 +192,20 @@ cite {
     margin-right: auto;
     margin-left: auto;
 }
-
 #markdown blockquote {
-    border-top: 2px solid #111;
-    border-bottom: 2px solid #111;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
 }
+
 #markdown p {
   margin-bottom: 1.5rem;
   font-family: Lora, serif;
 }
+
 #markdown figure, #markdown img {
-    text-align: center;
+  text-align: center;
 }
+
 .grid-small {
   width: 50%;
   max-width: 38em;
@@ -212,7 +235,6 @@ a {
   font-size: 100%;
 }
 
-
 .bitcoin img, .header img {
   margin-top: .5em;
   height: 2.5em;
@@ -223,40 +245,48 @@ a {
   width: 50%;
   max-width: 38em;
 }
+
 .lesson__navigation img {
-    height: 1em;
-    margin-right: -1em;
+  height: 1em;
+  margin-right: -1em;
 }
+
 .lesson__navigation {
-    justify-content: space-between;
-    display: flex;
-    vertical-align: bottom;
-    margin: 3em 0;
+  justify-content: space-between;
+  display: flex;
+  vertical-align: bottom;
+  margin: 3em 0;
 }
+
 .lesson__navigation li:last-child a:after {
-    content: " →";
+  content: " →";
 }
+
 .lesson__navigation li:first-child a:before {
-    content: "← ";
+  content: "← ";
 }
+
 .bitcoin__list, .books, .footer__social, .footer__tags, .header__list, .lesson__navigation, .post__social, .resources__navigation {
-    list-style-type: none;
+  list-style-type: none;
 }
+
 code, pre {
-    color: #aaa;
-    background: #111;
-    word-wrap: breaks;
-    overflow-wrap: anywhere;
+  color: #aaa;
+  background: #111;
+  word-wrap: breaks;
+  overflow-wrap: anywhere;
 }
+
 code, kbd, pre, samp {
-    font-family: Courier,monospace;
+  font-family: Courier, monospace;
 }
+
 pre {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 2em .75em;
-    line-height: 1.8;
-    white-space: pre-wrap;
-    border-radius: 5px;
-    overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2em .75em;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  border-radius: 5px;
+  overflow: hidden;
 }
